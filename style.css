@@ -1,0 +1,158 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+header {
+  height: 60vh;
+  background-color: hsl(353, 100%, 62%);
+  background-image: url(/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50px;
+}
+
+.header-top {
+  display: flex;
+  column-gap: 20%;
+}
+
+.center {
+  display: flex;
+  column-gap: 5%;
+}
+
+.center p {
+  color: white;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.connect {
+  font-family: "ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+
+.center span {
+  display: flex;
+  height: 12px;
+}
+
+.center span img {
+  margin-top: 4px;
+}
+.dropdown-content {
+  box-shadow: 20px;
+  margin-top: 10px;
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: white;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  height: 5vh;
+  font-family: "overpass", sans-serif;
+  font-weight: 300;
+}
+
+.dropdown-content:hover a{
+    display: block;
+    transition: 0.7s;
+}
+
+.dropdown-content:hover{
+    display: none;
+}
+
+.right-side {
+  column-gap: 15%;
+  margin-left: 10%;
+}
+
+.right-side a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+#login {
+  font-weight: 300;
+  color: white;
+  font-family: "overpass", sans-serif;
+}
+
+#sign-up {
+  font-weight: 300;
+  padding: 10px;
+  font-family: "overpass", sans-serif;
+  background-color: white;
+  border-radius: 40px;
+  width: 90px;
+  color: hsla(353, 91%, 50%, 0.815);
+}
+
+.left-side {
+  margin-left: 5%;
+  width: 6%;
+}
+
+.left-side,
+.right-side,
+.center {
+  margin-top: 2%;
+}
+
+.bottom-header {
+  display: grid;
+  text-align: center;
+  margin-top: 6%;
+}
+
+#modern {
+  font-family: "overpass", sans-serif;
+  color: white;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+#audience {
+  font-family: "overpass", sans-serif;
+  font-weight: 300;
+  margin-top: 1%;
+  color: white;
+  font-size: medium;
+  opacity: 0.7;
+}
+
+.button {
+  margin-top: 3%;
+  text-align: center;
+}
+
+#start {
+  font-family: "overpass", sans-serif;
+  font-weight: 300;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-right: 3%;
+  background-color: white;
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  color: hsla(353, 91%, 50%, 0.815);
+}
+
+#more {
+  font-weight: 300;
+  font-family: "overpass", sans-serif;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
