@@ -6,6 +6,8 @@
   max-width: 100%;
 }
 
+/* header */
+
 header {
   height: 60vh;
   background-color: hsl(353, 100%, 62%);
@@ -156,3 +158,56 @@ header {
   padding: 10px;
   border-radius: 20px;
 }
+
+/* 1st section */
+.first-section{
+    display: flex;
+}
+
+.heading{
+    text-align: center;
+    
+}
+
+.heading h3{
+    font-family: "ubuntu",sans-serif;
+    font-weight: 700;
+    color: hsl(237, 17%, 21%);
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 40%;
+    
+}
+
+.body{
+    margin-top: 10%;
+    height: 60vh;
+    width: 60%;
+    display: grid;
+    column-gap: 20%;
+}
+
+.text{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.text p{
+    margin-top: 15px;
+    font-family: "overpass",sans-serif;
+    font-weight: 300;
+    color: hsl(237, 23%, 32%);
+    font-size: small;
+}
+
+.text h3{
+    color:hsl(237, 17%, 21%);
+    font-family: "ubuntu",sans-serif;
+    font-weight: 700;
+}
+
+.illustration{
+    width: 60%;
+    margin-top: 5%;
+}
+
