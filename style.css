@@ -100,10 +100,15 @@ header {
   color: hsla(353, 91%, 50%, 0.815);
 }
 
-#sign-up:hover{
-    color: white;
-    cursor: pointer;
-    background:hsl(353, 100%, 62%);
+#sign-up:hover {
+  color: white;
+  cursor: pointer;
+  background: hsl(353, 100%, 62%);
+}
+
+.icon-hamburger {
+  height: 10px;
+  display: none;
 }
 
 .left-side {
@@ -157,11 +162,11 @@ header {
   color: hsla(353, 91%, 50%, 0.815);
 }
 
-#start:hover{
-    background: hsl(353, 100%, 62%);
-    color: white;
-    transition: 0.7s;
-    cursor: pointer;
+#start:hover {
+  background: hsl(353, 100%, 62%);
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
 }
 
 #more {
@@ -174,16 +179,17 @@ header {
   border-radius: 20px;
 }
 
-#more:hover{
-    background: white;
-    color: hsl(353, 100%, 62%);
-    cursor: pointer;
-    transition: 0.7s;
+#more:hover {
+  background: white;
+  color: hsl(353, 100%, 62%);
+  cursor: pointer;
+  transition: 0.7s;
 }
 
 /* 1st section */
 .first-section {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .heading {
@@ -197,6 +203,10 @@ header {
   margin-top: 40px;
   position: absolute;
   margin-left: 40%;
+}
+
+.heading-b {
+  display: none;
 }
 
 .body {
@@ -229,7 +239,10 @@ header {
 .illustration {
   width: 60%;
   margin-top: 5%;
-  position: relative;
+}
+
+.mobile {
+  display: none;
 }
 
 /* card */
@@ -345,4 +358,196 @@ footer {
   color: white;
   font-family: "overpass", sans-serif;
   font-weight: 300;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  /* reset */
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* heading */
+  header {
+    height: 30vh;
+    background-color: hsl(13, 100%, 72%);
+    border-bottom-left-radius: 50px;
+    max-width: 100%;
+    border-bottom-left-radius: 60px;
+  }
+
+  .header-top {
+    display: flex;
+    column-gap: 5%;
+  }
+
+  .center {
+    display: none;
+    column-gap: 5%;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  .left-side {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .icon-hamburger {
+    display: inline-flex;
+    margin-left: 50%;
+    margin-top: 5%;
+  }
+
+  .bottom-header {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+
+  #modern {
+    width: 85%;
+  }
+
+  .bottom-header p {
+    margin-top: 5%;
+  }
+
+  .button {
+    margin-top: 15%;
+  }
+
+  .button a {
+    font-weight: 700;
+  }
+
+  /* first section */
+
+  .first-section {
+    display: grid;
+  }
+  .heading-b {
+    text-align: center;
+    display: inline-block;
+    margin-top: 10%;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .heading-b p {
+    font-family: "ubuntu", sans-serif;
+    font-weight: 700;
+    color: hsl(208, 49%, 24%);
+    margin-top: 1%;
+    position: absolute;
+    margin-left: 38%;
+    font-size: larger;
+  }
+
+  .body {
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 35vh;
+  }
+
+  .text {
+    width: 30%;
+    height: 0vh;
+    padding: 0px;
+    margin-left: 35%;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .illustration img {
+    width: 60%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  /* card*/
+
+  .card {
+    display: grid;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
+    margin-top: 20%;
+    height: 40vh;
+  }
+
+  .phone-image {
+    position: relative;
+    margin-top: -20%;
+    margin-left: 8%;
+  }
+
+  .phone-image img {
+    height: 80%;
+    margin-top: 5%;
+  }
+
+  .card-text {
+    width: 50%;
+    margin-left: 20%;
+    margin-top: -10%;
+  }
+
+  .card-text h3 {
+    width: 50%;
+    margin-left: 22%;
+  }
+
+  /* second section */
+
+  .second-section {
+    height: 80vh;
+    display: grid;
+  }
+
+  .illustration-laptop-desktop {
+    display: grid;
+    width: 80%;
+    height: 30vh;
+  }
+
+  .text {
+    margin-right: 35px;
+  }
+
+  /* footer */
+
+  footer{
+    height: 40vh;
+    width: 100%;
+    border-top-right-radius: 80px;
+  }
+
+  .container{
+    display: grid;
+    width: 10%;
+    justify-self: center;
+    margin-left: 40%;
+  }
+
+  .blogr{
+    height: 20px;
+  }
 }
